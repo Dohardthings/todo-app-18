@@ -63,6 +63,44 @@ a {
     border-bottom: 3px solid yellow;
   }
 
+}
 
+.container {
+ width: 75%;
+ margin: auto;
+ color: $regular-text;
+}
 
+.new-list-heading {
+
+}
+
+.new-form {
+  padding: 1rem;
+  box-shadow: 0.3rem 0.3rem 2rem $regular-text;
+}
+
+.new-input {
+  width: 100%;
+  margin-top: 1rem;
+  border: 0;
+  border-bottom: 1px solid $placeholder-text;
+  outline: none;
+  color: $placeholder-text;
+  font-size: 1rem;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.save-list {
+  margin-top: 1.5rem;
+  padding: 0 1rem;
+  border: 0;
+  background: none;
+  color: $brand-blue;
+  font-size: 1rem;
+  cursor: pointer;
 }
