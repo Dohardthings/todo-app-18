@@ -49,4 +49,20 @@ nav {
   width: 25%;
   display: flex;
   justify-content: center;
+  width: 100%;
+}
+
+a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+
+  &:hover {
+
+    border-bottom: 3px solid yellow;
+  }
+
+
+
 }

@@ -1,0 +1,12 @@
+<nav>
+  <div class="list-list">
+    <ul class="sub-nav-list">
+      {{#each model as |list|}}
+        <li class="sub-navbar-links">{{list.title}}</li>
+      {{/each}}
+    </ul>
+    {{#link-to "lists.new"}}<p class="sub-navbar-links">NEW LIST</p>{{/link-to}}
+  </div>
+</nav>
+
+{{outlet}}
