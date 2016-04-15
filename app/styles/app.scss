@@ -1,5 +1,52 @@
+$brand-blue: #00bbd3;
+$brand-yellow: #ffff8c;
+$title-white: #fff;
+$regular-text: #1c1c1c;
+$placeholder-text: rgba(0, 0, 0, 0.38);
+
 @import "yoga";
 
 // Uncomment this for working with yoga prototyping
 // http://rtablada.github.io/yoga-sass/#mixin-yoga-prototype
 // @include yoga-prototype();
+
+body {
+  font-size: 14px;
+}
+
+nav {
+  min-width: 100%;
+  background: #00bbd3;
+  color: #fff;
+}
+
+.topnav {
+  display:flex;
+
+}
+
+.hamburger {
+  margin: 1rem;
+}
+
+.list-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow: auto;
+  margin: auto;
+}
+
+.sub-nav-list {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.sub-navbar-links {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
