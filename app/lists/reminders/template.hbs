@@ -1,9 +1,16 @@
 
 
-<h2 class="reminder-heading">{{model.id.title}}</h2>
-<form class="new-form">
+<h2 class="reminder-heading">{{list_id.title}}</h2>
+
+<ul class="reminder-list">
+  <li class="reminder-list-item">{{input class="list-checkbox"  type="checkbox" checked=done}}
+  {{name}}
+  </li>
+</ul>
+<form class="new-form" {{action saveReminder model on="submit"}}>
 <div class="input-container">
-  {{input class="new-input" placeholder="What do you want to do?" type="text"}}
+  {{input class="new-input" placeholder="What do you want to do?" type="text" value=name}}
+
   <button class="save-list">Accept</button>
 </div>
 </form>

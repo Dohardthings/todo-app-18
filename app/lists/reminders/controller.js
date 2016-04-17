@@ -1,10 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  saveReminder(attr) {
-    const reminder = this.store.createRecord(`reminder`, attr);
-
+  saveReminder(name, done, list) {
+    const reminder = this.store.createRecord(`reminder`, {name, done, list});
+console.log(reminder);
     reminder.save();
+
   },
 
 });

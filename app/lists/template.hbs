@@ -2,9 +2,9 @@
   <div class="list-list">
     <ul class="sub-nav-list">
       {{#each model as |list|}}
-      {{#link-to "lists.reminders"}}
-        <li class="sub-navbar-links">{{list.title}}</li>
-        {{/link-to}}
+
+        <li class="sub-navbar-links">{{#link-to "lists.reminders" list}}{{list.title}}{{/link-to}}</li>
+
       {{/each}}
     </ul>
     {{#link-to "lists.new"}}<p class="sub-navbar-links">NEW LIST</p>{{/link-to}}
