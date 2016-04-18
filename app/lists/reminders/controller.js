@@ -8,8 +8,13 @@ export default Ember.Controller.extend({
       name,
     });
 
-    reminder.save().then(() => {
-      this.set(`name`, ``);
-    });
+    reminder.save();
   },
+
+  markDone(reminder) {
+    reminder.toggleProperty(`done`);
+    console.log(reminder);
+    reminder.save();
+  },
+
 });
