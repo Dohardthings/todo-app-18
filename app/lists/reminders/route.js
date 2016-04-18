@@ -1,10 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model() {
-    return {
-      name: ``,
-      done: ``,
-    };
+  model(params) {
+    return this.store.findRecord(`list`, params.id);
   },
 });
