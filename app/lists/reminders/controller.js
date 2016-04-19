@@ -13,8 +13,11 @@ export default Ember.Controller.extend({
 
   markDone(reminder) {
     reminder.toggleProperty(`done`);
-    console.log(reminder);
     reminder.save();
+  },
+
+  deleteList(list) {
+    list.destroyRecord();
   },
 
 });

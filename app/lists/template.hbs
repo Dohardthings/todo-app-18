@@ -3,7 +3,9 @@
     <ul class="sub-nav-list">
       {{#each model as |list|}}
 
-        <li class="sub-navbar-links">{{#link-to "lists.reminders" list}}{{list.title}}{{/link-to}}</li>
+        <li class="sub-navbar-links">{{#link-to "lists.reminders" list}}{{list.title}}{{/link-to}}
+
+        </li>
 
       {{/each}}
     </ul>
